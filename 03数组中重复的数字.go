@@ -7,7 +7,7 @@ import (
 
 func findRepeatNumber(nums []int) int {
 	sort.Ints(nums)
-	for i, numSize := 0, len(nums); i < numSize; i++ {
+	for i := 0; i < len(nums); i++ {
 		if nums[i] == nums[i+1] {
 			return nums[i]
 		}
