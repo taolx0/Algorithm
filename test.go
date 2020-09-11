@@ -20,4 +20,5 @@ func main() {
 	str := "你好"
 	fmt.Println([]rune(str))
 	fmt.Println([]byte(str))
+	//fmt.Println(str.(string))
 }
