@@ -38,6 +38,7 @@ func main() {
 	//var this *CQueue
 	this := Constructor()
 	this.AppendTail(1)
+	//this.AppendTail(2)
 	//fmt.Println(this.stack1.Len())
 	fmt.Println(this.DeleteHead())
 }
