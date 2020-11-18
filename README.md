@@ -1,4 +1,4 @@
 # Algorithm
 算法练习
-- Golang
+- golang
 - data structure & algorithm
