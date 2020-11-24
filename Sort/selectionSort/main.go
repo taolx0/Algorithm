@@ -10,14 +10,14 @@ func main() {
 
 func selectionSort(a []int) []int {
 	length := len(a)
-	for j := 0; j < length-1; j++ {
-		min := j
-		for i := j + 1; i < length; i++ {
-			if a[i] < a[min] {
-				min = i
+	for i := 0; i < length-1; i++ {
+		min := i
+		for j := i + 1; j < length; j++ {
+			if a[j] < a[min] {
+				min = j
 			}
 		}
-		a[j], a[min] = a[min], a[j]
+		a[min], a[i] = a[i], a[min]
 	}
 	return a
 }
