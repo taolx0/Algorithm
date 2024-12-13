@@ -15,7 +15,7 @@ func Test_deleteNode1(t *testing.T) {
 		want args
 	}{
 		{
-			name: "1",
+			name: "deleteNode1",
 			args: args{val: 1, head: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5, Next: nil}}}}},
 			want: args{val: 2, head: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5, Next: nil}}}},
 		},
