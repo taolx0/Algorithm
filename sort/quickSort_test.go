@@ -34,14 +34,14 @@ func quickSort(slice []int) (result []int) {
 		return slice
 	}
 
-	mid := len(slice) / 2
+	mid := slice[0]
 	var left []int
 	var right []int
 	var midSlice []int
 	for _, s := range slice {
-		if s < slice[mid] {
+		if s < mid {
 			left = append(left, s)
-		} else if s > slice[mid] {
+		} else if s > mid {
 			right = append(right, s)
 		} else {
 			midSlice = append(midSlice, s)
