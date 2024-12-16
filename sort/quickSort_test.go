@@ -37,16 +37,19 @@ func quickSort(slice []int) (result []int) {
 	mid := len(slice) / 2
 	var left []int
 	var right []int
+	var midSlice []int
 	for _, s := range slice {
 		if s < slice[mid] {
 			left = append(left, s)
 		} else if s > slice[mid] {
 			right = append(right, s)
+		} else {
+			midSlice = append(midSlice, s)
 		}
 	}
 
 	result = append(result, quickSort(left)...)
-	result = append(result, slice[mid])
+	result = append(result, midSlice...)
 	result = append(result, quickSort(right)...)
 
 	return
